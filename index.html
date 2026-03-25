@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EG Download | تحميل فيديوهات تيك توك بدون علامة مائية</title>
+    <meta name="description" content="أفضل أداة مجانية لتحميل فيديوهات تيك توك بدون علامة مائية بجودة عالية.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-blobs">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <i class="fab fa-tiktok"></i>
+                <span>EG<span>Download</span></span>
+            </div>
+            <div class="nav-links">
+                <a href="#"><i class="fas fa-home"></i> الرئيسية</a>
+                <a href="#how-to"><i class="fas fa-question-circle"></i> كيف يعمل؟</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="hero">
+            <h1>محمل فيديوهات <span>تيك توك</span> الاحترافي</h1>
+            <p>حمل فيديوهاتك المفضلة بدون العلامة المائية المزعجة، بضغطة زر واحدة وبأعلى جودة ممكنة.</p>
+            
+            <div class="search-box-container">
+                <div class="search-box">
+                    <i class="fas fa-link link-icon"></i>
+                    <input type="text" id="tiktok-url" placeholder="ضع رابط الفيديو هنا (مثال: https://vm.tiktok.com/...)" autocomplete="off">
+                    <button id="download-btn">
+                        <span>تحميل</span>
+                        <i class="fas fa-arrow-down"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="status-message" class="status-message"></div>
+        </section>
+
+        <section id="result-container" class="result-container hidden">
+            <div class="result-card">
+                <div class="video-preview">
+                    <img id="video-cover" src="" alt="Video Cover">
+                    <div class="overlay">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="video-info">
+                    <h2 id="video-title">عنوان الفيديو يظهر هنا</h2>
+                    <div class="author-info">
+                        <i class="fas fa-user"></i>
+                        <span id="video-author">@username</span>
+                    </div>
+                    <div class="download-options">
+                        <a href="#" id="dl-no-watermark" class="btn btn-primary" target="_blank" rel="noopener">
+                            <i class="fas fa-video"></i> تحميل بدون علامة مائية
+                        </a>
+                        <a href="#" id="dl-mp3" class="btn btn-secondary" target="_blank" rel="noopener">
+                            <i class="fas fa-music"></i> تحميل MP3
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="how-to" class="how-to">
+            <h3>كيفية التحميل</h3>
+            <div class="steps grid">
+                <div class="step-card">
+                    <div class="step-num">01</div>
+                    <h4>نسخ الرابط</h4>
+                    <p>افتح تطبيق تيك توك، اختر الفيديو، واضغط على زر المشاركة ثم "نسخ الرابط".</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">02</div>
+                    <h4>لصق الرابط</h4>
+                    <p>عد إلى هنا والصق الرابط في المربع المخصص في الأعلى.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-num">03</div>
+                    <h4>التحميل</h4>
+                    <p>اضغط على "تحميل" وانتظر لحظات لتجهيز الفيديو الخاص بك.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Founder Section -->
+        <section class="founder-section">
+            <div class="founder-card">
+                <div class="founder-image">
+                    <img src="founder.jpg" alt="Mohamed Hamdy">
+                </div>
+                <div class="founder-info">
+                    <h3>مؤسس الموقع</h3>
+                    <h2>Mohamed Hamdy _-_-_ محمد حمدي</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 EG Download. جميع الحقوق محفوظة.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Overlay -->
+    <div id="loader" class="loader-overlay hidden">
+        <div class="spinner"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
